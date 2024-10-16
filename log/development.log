@@ -10947,3 +10947,97 @@ Processing by FriendsController#index as HTML
 Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.6ms | Allocations: 7579)
 
 
+Started GET "/" for ::1 at 2024-10-16 22:33:11 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 22.4ms | Allocations: 947)
+Importmap skipped missing path: friends_search.js
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 616)
+  Rendered layout layouts/application.html.erb (Duration: 186.2ms | Allocations: 45431)
+Completed 200 OK in 207ms (Views: 190.3ms | ActiveRecord: 0.0ms | Allocations: 50773)
+
+
+Started GET "/" for ::1 at 2024-10-16 22:33:29 +0500
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 663)
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 539)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4169)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 5171)
+
+
+Started GET "/" for ::1 at 2024-10-16 22:33:30 +0500
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 234)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2831)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 3132)
+
+
+Started GET "/" for ::1 at 2024-10-16 22:33:31 +0500
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 243)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2840)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3120)
+
+
+Started GET "/" for ::1 at 2024-10-16 22:33:32 +0500
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 225)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2821)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 3094)
+
+
+Started GET "/home/about" for ::1 at 2024-10-16 22:33:35 +0500
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 155)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 309)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3339)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4161)
+
+
+Started GET "/" for ::1 at 2024-10-16 22:33:36 +0500
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 219)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2815)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3110)
+
+
+Started GET "/" for ::1 at 2024-10-16 22:34:42 +0500
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 794)
+  Rendered home/_header.html.erb (Duration: 3.0ms | Allocations: 501)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4241)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 5202)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-10-16 22:34:47 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 251)
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 636)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 4248)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 7099)
+Completed 200 OK in 30ms (Views: 18.1ms | ActiveRecord: 0.9ms | Allocations: 13869)
+
+
