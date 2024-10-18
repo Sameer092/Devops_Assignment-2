@@ -1,0 +1,12 @@
+# kustomize/overlays/production/patch.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rails-app
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+      - name: rails-app
+        image: itssam509/rails-app:prod

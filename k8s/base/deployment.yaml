@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rails-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rails-app
+  template:
+    metadata:
+      labels:
+        app: rails-app
+    spec:
+      containers:
+      - name: rails-app
+        image: itssam509/rails-app:dev
+        ports:
+        - containerPort: 3000
+        command: ["rails"]
+        args: ["server", "-b", "0.0.0.0"]
+        volumeMounts:
+        - name: app-volume
+          mountPath: /myapp  # Path inside the container where the app will be available
+      volumes:
+      - name: app-volume
+        hostPath:
+          path: /home/itssam509/Desktop/Devops_Assignment-2  # Adjust the path according to your local system
