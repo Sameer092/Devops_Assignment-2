@@ -1,4 +1,11 @@
 resources:
-- deployment.yaml
-- service.yaml
-- secrets.yaml
+  - deployment.yaml
+  - service.yaml
+  - secrets.yaml
+  - statefulset.yaml
+  - pv.yaml
+  - pvc.yaml
+  - service-account.yaml
+  - role-binding.yaml
+  - ingress.yaml
+          
