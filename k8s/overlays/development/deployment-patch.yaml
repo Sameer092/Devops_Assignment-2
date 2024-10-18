@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rails-app
+spec:
+  template:
+    spec:
+      containers:
+        - name: rails-container
+          image: itssam509/rails-app:latest 
+          imagePullPolicy: Always  # This will ensure Kubernetes always tries to pull the latest image
