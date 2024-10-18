@@ -8,4 +8,9 @@ resources:
   - service-account.yaml
   - role-binding.yaml
   - ingress.yaml
+  - monitoring/prometheus.yaml
+  - monitoring/grafana.yaml
+  - logging/fluentd.yaml
+  - logging/elasticsearch.yaml
+  - logging/kibana.yaml
           

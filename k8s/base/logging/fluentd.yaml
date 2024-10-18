@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fluentd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fluentd
+  template:
+    metadata:
+      labels:
+        app: fluentd
+    spec:
+      containers:
+        - name: fluentd
+          image: fluent/fluentd:v1.11.5
+          ports:
+            - containerPort: 24224
+          volumeMounts:
+            - name: app-logs
+              mountPath: /myapp/log
+      volumes:
+        - name: app-logs
+          hostPath:
+            path: /home/itssam509/Desktop/Devops_Assignment-2/log  
