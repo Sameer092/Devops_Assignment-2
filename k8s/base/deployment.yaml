@@ -25,4 +25,4 @@ spec:
       volumes:
       - name: app-volume
         hostPath:
-          path: /home/itssam509/Desktop/Devops_Assignment-2  # Adjust the path according to your local system
+          path: /home/itssam509/Desktop/Devops_Assignment-2  
