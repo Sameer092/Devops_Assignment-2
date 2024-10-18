@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/myapp  
+      - gem_cache:/usr/local/bundle
+    ports:
+      - "3000:3000"
+    environment:
+      - RAILS_ENV=development
+    command: bash -c "bundle exec rerun 'rails server -b 0.0.0.0'"
+
+volumes:
+  gem_cache:
