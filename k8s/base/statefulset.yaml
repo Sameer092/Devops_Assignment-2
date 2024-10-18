@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: sqlite-db
+spec:
+  serviceName: sqlite
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sqlite
+  template:
+    metadata:
+      labels:
+        app: sqlite
+    spec:
+      containers:
+      - name: sqlite
+        image: itssam509/rails-app:dev
+        volumeMounts:
+        - mountPath: /myapp/db 
+          name: sqlite-storage
+  volumeClaimTemplates:
+  - metadata:
+      name: sqlite-storage
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 1Gi

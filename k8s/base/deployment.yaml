@@ -21,7 +21,7 @@ spec:
         args: ["server", "-b", "0.0.0.0"]
         volumeMounts:
         - name: app-volume
-          mountPath: /myapp  # Path inside the container where the app will be available
+          mountPath: /myapp  
       volumes:
       - name: app-volume
         hostPath:
